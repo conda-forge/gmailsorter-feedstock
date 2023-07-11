@@ -8,11 +8,13 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gmailsorter-{{ version }}.tar.gz
   sha256: 655eae89ebc3beef51b8b5d2df17381cf39dd5763560b158462f271a8406b1c0
+  patches:
+    - webapp.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - gmailsorter = gmailsorter.__main__:command_line_parser
     - gmailsorter-app = gmailsorter.webapp.app:run_app
