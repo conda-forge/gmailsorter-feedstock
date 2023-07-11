@@ -1,0 +1,19 @@
+From 9deb3de4e2aeee6ca6f6059de8ba45a3f4f7a1ce Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jan=20Jan=C3=9Fen?= <janssen@mpie.de>
+Date: Mon, 10 Jul 2023 19:33:32 -0600
+Subject: [PATCH] fix webapp
+
+---
+ gmailsorter/webapp/__main__.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gmailsorter/webapp/__main__.py b/gmailsorter/webapp/__main__.py
+index 18bcfad..593667c 100644
+--- a/gmailsorter/webapp/__main__.py
++++ b/gmailsorter/webapp/__main__.py
+@@ -1,4 +1,4 @@
+-from gmailsortapp.app import run_app
++from gmailsorter.webapp.app import run_app
+ 
+ 
+ if __name__ == "__main__":
