@@ -43,6 +43,7 @@ test:
     - gmailsorter-app --help
   requires:
     - pip
+    - flask
 
 about:
   home: https://github.com/jan-janssen/gmailsorter
