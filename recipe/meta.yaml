@@ -44,6 +44,7 @@ test:
   requires:
     - pip
     - flask
+    - flask-login
 
 about:
   home: https://github.com/jan-janssen/gmailsorter
