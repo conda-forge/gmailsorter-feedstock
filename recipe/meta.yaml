@@ -43,7 +43,7 @@ test:
     - gmailsorter-app --help
   requires:
     - pip
-    - flask
+    - flask <3
     - flask-login
 
 about:
