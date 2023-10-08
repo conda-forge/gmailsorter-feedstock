@@ -1,5 +1,5 @@
 {% set name = "gmailsorter" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gmailsorter-{{ version }}.tar.gz
-  sha256: b4aa29f65b10014ec25a664e5158f143cb68d2ef9c12cdadbf8fec0024b064f4
+  sha256: f310c1419eebc845f218cbe315d540ce1f27ca429fc2b4716616bc52d94b96bf
 
 build:
   noarch: python
