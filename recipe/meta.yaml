@@ -45,6 +45,7 @@ test:
     - pip
     - flask <3
     - flask-login
+    - werkzeug <3
 
 about:
   home: https://github.com/jan-janssen/gmailsorter
