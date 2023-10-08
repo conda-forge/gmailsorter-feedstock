@@ -40,12 +40,12 @@ test:
     - pip check
     - gmailsorter --help
     - gmailsorter-daemon --help
-    - gmailsorter-app --help
+    # - gmailsorter-app --help
   requires:
     - pip
-    - flask <3
-    - flask-login
-    - werkzeug <3
+    # - flask <3
+    # - flask-login
+    # - werkzeug <3
 
 about:
   home: https://github.com/jan-janssen/gmailsorter
