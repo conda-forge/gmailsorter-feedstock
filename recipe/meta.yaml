@@ -22,6 +22,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - google-api-python-client >=2.117.0
