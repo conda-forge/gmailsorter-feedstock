@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gmailsorter-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gmailsorter-{{ version }}.tar.gz
   sha256: d786e02b7de1d6885f5f892b7324f14c65a81582bebea236370af22b24b69646
 
 build:
@@ -16,14 +16,15 @@ build:
     - gmailsorter-app=gmailsorter.webapp.app:run_app
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - google-api-python-client >=2.117.0
     - google-auth >=2.27.0
     - google-auth-oauthlib >=1.2.0
@@ -46,6 +47,7 @@ test:
     # - flask <3
     # - flask-login
     # - werkzeug <3
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jan-janssen/gmailsorter
