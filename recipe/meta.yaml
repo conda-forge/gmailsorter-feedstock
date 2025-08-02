@@ -25,6 +25,7 @@ requirements:
     - pip
     - setuptools
     - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - google-api-python-client >=2.177.0
