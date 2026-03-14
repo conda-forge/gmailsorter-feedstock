@@ -1,6 +1,6 @@
 {% set name = "gmailsorter" %}
-{% set version = "0.1.5" %}
-{% set python_min = "3.10" %}
+{% set version = "0.1.6" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gmailsorter-{{ version }}.tar.gz
-  sha256: a61524d7b0a1a89bd4fe6952fde9363bb3d516a9a58c6d5e26f1d3fde58ccbdb
+  sha256: d2bd190e517d69de98e9404685aaa92ebd01909305326082943f13f9b500b7f9
 
 build:
   entry_points:
@@ -31,10 +31,10 @@ requirements:
     - google-api-python-client >=2.177.0
     - google-auth >=2.40.3
     - google-auth-oauthlib >=1.2.2
-    - numpy >=2.2.4
+    - numpy >=2.4.0
     - tqdm >=4.67.1
     - pandas >=2.3.1
-    - scikit-learn >=1.6.1
+    - scikit-learn >=1.8.0
     - sqlalchemy >=2.0.42
 
 test:
