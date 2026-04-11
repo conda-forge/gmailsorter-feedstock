@@ -1,5 +1,5 @@
 {% set name = "gmailsorter" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gmailsorter-{{ version }}.tar.gz
-  sha256: b7ba6cf77a82009d16c3dbf0acb733e85b1867e45971cb24914112ac778cc668
+  sha256: c85dfa378391b4b5b379153315bc7653335903a0b9d8821c5778aca98c205081
 
 build:
   entry_points:
@@ -28,14 +28,14 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - google-api-python-client >=2.177.0
-    - google-auth >=2.40.3
-    - google-auth-oauthlib >=1.2.2
-    - numpy >=2.4.0
-    - tqdm >=4.67.1
-    - pandas >=2.3.1
+    - google-api-python-client >=2.194.0
+    - google-auth >=2.49.2
+    - google-auth-oauthlib >=1.3.1
+    - numpy >=2.4.3
+    - tqdm >=4.67.3
+    - pandas >=3.0.2
     - scikit-learn >=1.8.0
-    - sqlalchemy >=2.0.42
+    - sqlalchemy >=2.0.49
 
 test:
   imports:
