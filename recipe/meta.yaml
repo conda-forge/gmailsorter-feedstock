@@ -1,5 +1,5 @@
 {% set name = "gmailsorter" %}
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gmailsorter-{{ version }}.tar.gz
-  sha256: c85dfa378391b4b5b379153315bc7653335903a0b9d8821c5778aca98c205081
+  sha256: ca366ed0b489632314fc36b27f0f86c35e6e0dcc25df957184735d4be58d21e4
 
 build:
   entry_points:
