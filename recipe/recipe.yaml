@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: gmailsorter
-  version: "0.1.12"
-  python_min: "3.12"
+  version: 0.2.0
+  python_min: '3.12'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gmailsorter-${{ version }}.tar.gz
-  sha256: a18b80f8e616923d138603a6d840215cc4aac13726b4f458b62b7de21c6d8739
+  sha256: 2be9e2b3ffb65f6c333a21c86d04ad050ba853e49eb7275d517463a12e871f1f
 
 build:
   number: 0
@@ -32,23 +32,19 @@ requirements:
     - hatch-vcs
   run:
     - python >=${{ python_min }}
-    - google-api-python-client >=2.198.0
-    - google-auth >=2.56.3
-    - google-auth-oauthlib >=1.4.0
-    - numpy >=2.5.1
-    - tqdm >=4.70.0
-    - pandas >=3.0.5
-    - scikit-learn >=1.9.0
-    - sqlalchemy >=2.0.51
-
+    - google-api-python-client >=2.201.0
+    - google-auth >=2.60.0
+    - google-auth-oauthlib >=1.5.0
+    - sqlalchemy >=2.0.52
+    - mailsort >=0.0.3
 tests:
   - python:
       imports:
         - gmailsorter
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
   - requirements:
       run:
         - pip
