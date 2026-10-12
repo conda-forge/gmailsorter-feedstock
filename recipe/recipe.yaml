@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: gmailsorter
-  version: 0.2.0
+  version: "0.2.1"
   python_min: '3.12'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gmailsorter-${{ version }}.tar.gz
-  sha256: 2be9e2b3ffb65f6c333a21c86d04ad050ba853e49eb7275d517463a12e871f1f
+  sha256: 880a3f39794a3a4f28768c9ce251c51391888c5dd5a5a145bbea0a6cac8a0301
 
 build:
   number: 0
@@ -35,8 +35,8 @@ requirements:
     - google-api-python-client >=2.201.0
     - google-auth >=2.60.0
     - google-auth-oauthlib >=1.5.0
-    - sqlalchemy >=2.0.52
-    - mailsort >=0.0.3
+    - sqlalchemy >=2.0.54
+    - mailsort >=0.0.4
 tests:
   - python:
       imports:
